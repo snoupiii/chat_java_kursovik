@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.ChatController">
+    <children>
+        <AnchorPane prefHeight="650.0" prefWidth="1000.0" style="-fx-background-color: silver;">
+         <children>
+            <TextArea fx:id="ChatArea" editable="false" layoutX="27.0" layoutY="14.0" prefHeight="468.0" prefWidth="846.0" style="-fx-background-color: #fafafa; -fx-border-radius: 20;" wrapText="true" />
+            <Button fx:id="Send" layoutX="883.0" layoutY="504.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="109.0" style="-fx-background-color: #fafafa; -fx-background-radius: 10;" text="Отправить" textFill="#696363">
+               <font>
+                  <Font name="Wingdings 2" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="Prof" layoutX="881.0" layoutY="55.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="118.0" style="-fx-background-color: silver; -fx-background-radius: 5;" text="Профиль" textFill="#696363">
+               <font>
+                  <Font name="Wingdings 2" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="Exit" layoutX="881.0" layoutY="14.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="92.0" style="-fx-background-color: silver; -fx-background-radius: 5;" text="Выйти" textFill="#696363">
+               <font>
+                  <Font name="Wingdings 2" size="21.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="MessageArea" layoutX="27.0" layoutY="504.0" prefHeight="128.0" prefWidth="846.0" promptText="Введите сообщение..." style="-fx-background-color: #fafafa;" wrapText="true">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextArea>
+            <AnchorPane fx:id="Attention" layoutX="400.0" layoutY="153.0" prefHeight="190.0" prefWidth="275.0" style="-fx-background-color: silver; -fx-background-radius: 15;" visible="false">
+               <children>
+                  <Button fx:id="KnOst" layoutX="144.0" layoutY="131.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="118.0" style="-fx-background-color: #fafafa; -fx-background-radius: 10;" text="Остаться" textFill="#696363">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="KnOut" layoutX="13.0" layoutY="131.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="118.0" style="-fx-background-color: #fafafa; -fx-background-radius: 10;" text="Выйти" textFill="#696363">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="108.0" prefWidth="248.0" style="-fx-background-color: #fafafa; -fx-background-radius: 10;">
+                     <children>
+                        <Label layoutX="7.0" layoutY="32.0" prefHeight="45.0" prefWidth="236.0" text="Вы действительно хотите выйти?">
+                           <font>
+                              <Font name="System Bold Italic" size="12.5" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
